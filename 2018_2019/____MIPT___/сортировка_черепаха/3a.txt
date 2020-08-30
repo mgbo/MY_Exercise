@@ -1,0 +1,8 @@
+7
+blue 150
+green 230
+red 50
+yellow 100
+pink 80
+violet 120
+orange 310

@@ -1,0 +1,14 @@
+8
+a blue
+b red
+c green
+d gold
+v violet
+o orange
+z yellow
+f brown
+4
+0 0 100 v a
+100 200 200 o f
+-50 -100 50 w d
+-350 200 300 z b
