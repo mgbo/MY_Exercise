@@ -1,0 +1,31 @@
+PARTIES:
+Party one
+Party two
+Party three
+VOTES:
+Party one
+Party one
+Party one
+Party one
+Party two
+Party one
+Party one
+Party one
+Party one
+Party two
+Party two
+Party two
+Party three
+Party two
+Party two
+Party two
+Party two
+Party two
+Party two
+Party two
+Party two
+Party two
+Party two
+Party two
+Party two
+Party two

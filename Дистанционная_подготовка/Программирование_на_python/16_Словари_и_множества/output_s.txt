@@ -1,0 +1,8 @@
+7
+ bacca - fruit
+ multa - punishment
+ pomum - apple
+ popula - apple
+ popum - fruit
+baca - fruit
+malum - apple, punishment
