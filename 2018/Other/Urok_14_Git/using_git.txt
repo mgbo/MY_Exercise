@@ -1,0 +1,58 @@
+ 
+1. git clone https://github.com/mgbo/Test.git (Test - name of repository)
+2. cd Test
+3. git status
+4. git add hello.py
+5. git status
+6. git commit -m 'First version hello code'
+7. git status
+8. git log 
+9. git push (git push will now push committed changes to remote server)
+10. git add hello.py
+11. git status
+12. git difftool HEAD (git log shows difference between local changes and previous version of the file)
+13. git commit -m 'added hello prompt'
+14. git push
+
+15. git checkout -- . (to discard changes that you change code in this file)
+16. git reverse 7d911ecfef6c6e8572035b217bd57212ee87399c (commit code name - do undo) 
+17. git reset --hard 7d911ecfef6c6e8572035b217bd57212ee87399c ( control z )
+18. git push (do update file on the site)
+
+------------------------------------- Branch ------------------------------------------
+
+19. git branch (узнать сколько ветков)
+20. git branch thirsty (This creates a new branch called thirsty)
+21. git checkout thirsty (this makes thirsty an active branch)
+22. git add hello.py (добавить изменяемый файл hello.py в новую ветку (thirsty))
+23. git commit -m 'new'
+24. git checkout master (выбрать ветку по умолчанию ро имени master)
+25. git merge thirsty (This merges thirsty branch into active branch (master in this case))
+26. git push thirsty
+28. git checkout thirsty
+29. git push
+30. git push --set-upstream origin thirsty
+31. git checkout -b dummy (create a new branch called dummy) -b means branch
+32. git branch
+33. git checkout master
+34. git branch
+35. git branch -d dummy (-d means delete dummy)
+
+
+---------------------- UpDATE file  -------------------------
+git pull
+git commit -m "command " .
+git push
+
+
+
+
+
+
+
+
+
+
+
+
+

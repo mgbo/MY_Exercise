@@ -1,0 +1,15 @@
+s_t =Time()
+
+		m_t1 = t1.m + t1.h * 60
+		m_t2 = self.m + self.h * 60
+
+		for i in range(1,25):
+			m_t1 = (m_t1 + 30)%720
+
+			m_t2 = (m_t2 - 60)%720
+
+			if abs(m_t1)==abs(m_t2):
+				s_t.m = abs(m_t1%60)
+				s_t.h = abs(m_t1//60)
+				return s_t
+				break

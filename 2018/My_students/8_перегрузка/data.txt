@@ -1,0 +1,4 @@
+rice 10 50
+tea 6 30
+cake 10 12
+salad 20 00

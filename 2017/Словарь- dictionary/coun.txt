@@ -1,0 +1,9 @@
+2
+Russia Moscow Petersburg Novgorod Kaluga
+Ukraine Kiev Donetsk Odessa
+5
+Odessa
+Moscow
+Novgorod
+Petersburg
+Kiev

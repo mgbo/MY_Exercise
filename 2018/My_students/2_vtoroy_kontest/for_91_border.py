@@ -1,0 +1,13 @@
+
+r = int(input())
+c = int(input())
+
+for row in range(r):
+	for col in range(c):
+		if row==0 or row==r-1:
+			print ("*",end='')
+		elif (row!=0 and col==0):
+			print ("*",end=' '*(c-2))
+		elif (row!=r-1 and col==c-1):
+			print ("*",end='')
+	print ()

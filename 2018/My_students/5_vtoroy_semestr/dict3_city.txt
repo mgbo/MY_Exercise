@@ -1,0 +1,8 @@
+3
+Russia Moscow Petersburg Novgorod Kaluga
+Ukraine Kiev Donetsk Odessa
+USA Washington Moscow
+3
+Odessa
+Moscow
+Novgorod
