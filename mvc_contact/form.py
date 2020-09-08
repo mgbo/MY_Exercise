@@ -1,7 +1,6 @@
 
 import tkinter as tk
 import tkinter.messagebox as mb
-
 from contact import Contact
 
 
@@ -9,14 +8,14 @@ class ContactList(tk.Frame):
     def __init__(self, master, **kwargs):
         super().__init__(master)
         self.lb = tk.Listbox(self, **kwargs)
-        scroll = tk.Scrollbar(self, command=self.lb.yview)
 
+        scroll = tk.Scrollbar(self, command=self.lb.yview)
         self.lb.config(yscrollcommand=scroll.set)
         scroll.pack(side=tk.RIGHT, fill=tk.Y)
         self.lb.pack(side=tk.LEFT, fill=tk.BOTH, expand=1)
 
     def insert(self, contact, index=tk.END):
-        text = "{}, {}".format(contact.last_name, contact.first_name)
+        text = "{} {}".format(contact.last_name, contact.first_name)
         self.lb.insert(index, text)
 
     def delete(self, index):
@@ -51,12 +50,14 @@ class ContactForm(tk.LabelFrame):
     def load_details(self, contact):
         values = (contact.last_name, contact.first_name,
                   contact.email, contact.phone)
+
         for entry, value in zip(self.entries, values):
             entry.delete(0, tk.END)
             entry.insert(0, value)
 
     def get_details(self):
         values = [e.get() for e in self.entries]
+        
         try:
             return Contact(*values)
         except ValueError as e:
