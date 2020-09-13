@@ -18,13 +18,13 @@ class Employee:
 		return 'Employee ({}, {}, {})'.format(self.first, self.last, self.pay)
 
 
-e1 = Employee('mg', 'mg', 500)
-print (e1)
-print(e1.fullname())
-e1.first = 'ko'
-print(e1.fullname())
-print (e1)
-print (e1.first)
+# e1 = Employee('mg', 'mg', 500)
+# print (e1)
+# print(e1.fullname)
+# e1.first = 'ko'
+# print(e1.fullname)
+# print (e1)
+# print (e1.first)
 
 
 
