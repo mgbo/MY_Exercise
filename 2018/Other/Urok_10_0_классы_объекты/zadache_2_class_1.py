@@ -54,6 +54,7 @@ class Time():
 
 			if t1.compare(t2) == 0:
 				break
+				
 		return t2
 
 if __name__ == "__main__":

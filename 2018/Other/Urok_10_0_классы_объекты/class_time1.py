@@ -31,6 +31,7 @@ class Time12():
 
 		if self.m>0:
 			t.h = (t.h + 1)%12
+
 		return t
 
 if __name__ == "__main__":
@@ -42,6 +43,10 @@ if __name__ == "__main__":
 	 t2 = Time12()
 	 t2.set(2,5)
 
+	 print(t2)
+	 t2.print()
+
+	 t2.round()
 	 print(t2)
 
 

@@ -13,6 +13,8 @@ class Time():
 		if h24<0 or h24>=24 or m24<0 or m24>=60:
 			raise ValueError("hour and minutes do not exits")
 			#print("ValueError")
+		self.m = m24
+		self.h = h24 % 12
 
 	def add(self, dt):
 		m = self.m + dt.m
@@ -73,7 +75,7 @@ if __name__ == "__main__":
 	ans = t1.compare(t2)
 	print (ans)
 
-	t3 = t2.sameTime(t1,30)
+	t3 = t2.sameTime(t1)
 	print(t3)
 	
 

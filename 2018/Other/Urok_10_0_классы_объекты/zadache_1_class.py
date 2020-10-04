@@ -5,15 +5,16 @@ class Time12():
 	def __init__(self, h=0, m=0):
 		self.h = h # часы от 0 до 11
 		self.m = m # минуты от о до 59
+		# self.set()
 
 	def __str__(self):
 		return "%02d:%02d"% (self.h, self.m)
 
 	def set(self, h24=0, m24=0):
 		if h24<0 or h24>=24 or m24<0 or m24>=60:
-			raise ValueError("hour = %d  min = %d "% (h24, m24))
-		self.m = m24
-		self.h = h24
+			raise ValueError("No good : hour = %d  min = %d "% (h24, m24))
+		# self.m = m24
+		# self.h = h24
 
 	def add(self, dt):
 		m = self.m + dt.m
@@ -56,12 +57,15 @@ class Time12():
 
 		if self.m>0:
 			t.h = (t.h + 1)%12
+
+		print("round : ",t)
 		return t
 
 if __name__ == "__main__":
 	
 	t1 = Time12(11,5)
 	print(t1)
+
 
 	t2 = Time12(11,15)
 	print(t2)
@@ -72,7 +76,9 @@ if __name__ == "__main__":
 	ans = t1.compare(t2)
 	print (ans)
 
-
+	t3 =Time12(15, 35)
+	tt = t3.round()
+	print(tt, type(tt))
 
 
 
